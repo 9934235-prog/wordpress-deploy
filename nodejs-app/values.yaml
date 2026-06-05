@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: nodeschool/workshopper
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: NodePort
+  port: 3000
+
+resources: {}
